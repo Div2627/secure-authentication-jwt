@@ -4,9 +4,7 @@ A secure authentication web application built with Node.js and Express.js, imple
 
 ## 🚀 Live Demo
 
-🔗 **Live Demo:** `https://YOUR-RENDER-URL.onrender.com`
-
-> The live demo link will be updated after deployment.
+🔗 **Live Demo:** https://secure-authentication-jwt.onrender.com/
 
 ## 📌 Features
 
