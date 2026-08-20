@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Secure Authentication</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="auth-card">
+
+            <div class="header">
+                <div class="logo">🔐</div>
+
+                <h1>Secure Auth</h1>
+
+                <p>Register or login securely with JWT authentication.</p>
+            </div>
+
+
+            <!-- REGISTER -->
+
+            <section id="register-section">
+
+                <h2>Create Account</h2>
+
+                <form id="register-form">
+
+                    <input
+                        type="text"
+                        id="register-name"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="register-email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="register-password"
+                        placeholder="Password (minimum 6 characters)"
+                        required
+                    >
+
+                    <button type="submit">
+                        Create Account
+                    </button>
+
+                </form>
+
+                <p id="register-message" class="message"></p>
+
+                <button id="show-login" class="secondary-button">
+                    Already have an account? Login
+                </button>
+
+            </section>
+
+
+            <!-- LOGIN -->
+
+            <section id="login-section" class="hidden">
+
+                <h2>Welcome Back</h2>
+
+                <form id="login-form">
+
+                    <input
+                        type="email"
+                        id="login-email"
+                        placeholder="Email"
+                        required
+                    >
+
+                    <input
+                        type="password"
+                        id="login-password"
+                        placeholder="Password"
+                        required
+                    >
+
+                    <button type="submit">
+                        Login
+                    </button>
+
+                </form>
+
+                <p id="login-message" class="message"></p>
+
+                <button id="show-register" class="secondary-button">
+                    Create a new account
+                </button>
+
+            </section>
+
+
+            <!-- DASHBOARD -->
+
+            <section id="dashboard-section" class="hidden">
+
+                <div class="success-icon">✅</div>
+
+                <h2>You're Logged In!</h2>
+
+                <p id="profile-info">
+                    Loading profile...
+                </p>
+
+                <button id="profile-btn">
+                    🔒 Access Protected Profile
+                </button>
+
+                <p id="profile-message" class="message"></p>
+
+                <button id="logout-btn" class="logout-button">
+                    Logout
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
